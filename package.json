@@ -1,0 +1,23 @@
+{
+  "name": "thiagoandre.dev",
+  "version": "1.0.0",
+  "description": "Thiago André - Blog",
+  "main": "index.js",
+  "scripts": {
+		"compile": "harp . ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thiagoandre-dev/thiagoandre-dev.github.io.git"
+  },
+  "author": "Thiago André",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagoandre-dev/thiagoandre-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/thiagoandre-dev/thiagoandre-dev.github.io#readme",
+  "devDependencies": {
+    "harp": "^0.46.1"
+  }
+}
