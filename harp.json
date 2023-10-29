@@ -1,5 +1,11 @@
 {
   "globals": {
-    "title": "Thiago André | Em construção"
+    "site_title": "Thiago André",
+		"my_titles": [
+			"Senior Full Stack Web Developer",
+			"Senior Database Architect & Administrator",
+			"Linux Systems Administrator",
+			"SEO Strategist"
+		]
   }
 }

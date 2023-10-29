@@ -1,0 +1,112 @@
+default-shadow = 1px 1px 5px #333
+media-break = 768px	
+
+*
+	margin: 0
+	box-sizing: border-box
+	font-family: 'Quicksand', sans-serif
+
+h2
+	font-family: 'Oswald', sans-serif
+
+header
+	height: 100vh
+	//background: #222
+	overflow: hidden
+	display: flex
+	align-items: center
+	flex-direction: column
+	position: relative
+	justify-content: space-around
+
+	img#cover
+		z-index: -1
+		min-height: 100%
+		min-width: 100%
+		position: absolute
+		filter: brightness(.7) blur(2px) grayscale(.4)
+		animation: fade-in 1.2s ease forwards
+	
+	#header-infos
+		width: 75%
+		padding: 20px
+		z-index: 1
+		display: flex
+		gap: 10px
+		@media (max-width: media-break) 
+			align-items: center
+			flex-direction: column
+			width: 100%
+			text-align: center
+
+		img#profile
+			position: relative
+			border-radius: 50%
+			border: 5px solid #eee
+			box-shadow: default-shadow
+			width: 200px
+			animation: up .6s ease forwards
+
+		#header-details
+			color: #eee
+			gap: 10px
+			display: flex
+			flex-direction: column
+			h1
+				position: relative
+				font-family: 'Merienda', cursive
+				text-shadow: default-shadow
+				font-size: xxx-large
+				white-space: nowrap
+				opacity: 0
+				animation: up .6s ease .3s forwards
+			h2
+				position: relative
+				font-family: 'Oswald', sans-serif
+				font-weight: normal
+				text-shadow: default-shadow	
+				font-size: larger
+				opacity: 0
+				animation: up .6s ease .6s forwards
+
+	#building-info
+		gap: 10px
+		display: flex
+		flex-direction: column
+		animation: drop-shadow 3s ease infinite
+		color: #eee
+		font-weight: bold
+		font-size: x-large
+		text-align: center
+
+
+@keyframes up
+	from
+		opacity: 0
+		top: 30px
+	to
+		opacity: 1
+		top: 0
+
+@keyframes fade-in
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+@keyframes fade-in-out
+	from
+		opacity: 0
+		transform: scale(1.05)
+	50%
+		opacity: 1
+		transform: scale(1)
+	to
+		opacity: 0
+		transform: scale(1.05)
+
+@keyframes drop-shadow
+	from
+		filter: drop-shadow(0px 0px 0px white);
+	to
+		filter: drop-shadow(0px 0px 300px white);
